@@ -1,0 +1,9 @@
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.deps.json
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.runtimeconfig.json
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.runtimeconfig.dev.json
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.dll
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.pdb
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.csprojResolveAssemblyReference.cache
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.AssemblyInfo.cs
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.dll
+C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.pdb
