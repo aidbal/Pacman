@@ -8,6 +8,27 @@ namespace Pacman
     {
         private int moveDirection;
         private int speed = 1;
+        private IEnemy[] observers; 
+
+        void notifyObservers()
+        {
+
+        }
+
+        void register(IEnemy obs)
+        {
+
+        }
+
+        void unregister(IEnemy obs)
+        {
+
+        }
+
+        void eat(ICandy candy)
+        {
+
+        }
 
         public void move()
         {
@@ -18,5 +39,7 @@ namespace Pacman
         {
             this.moveDirection = newDirection;
         }
+
+        
     }
 }

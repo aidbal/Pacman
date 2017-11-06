@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zygen\\Desktop\\Pacman\\Pacman\\Pacman\\Pacman.csproj",
+      "projectUniqueName": "D:\\Uni\\pacman\\Pacman\\Pacman\\Pacman\\Pacman.csproj",
       "projectName": "Pacman",
-      "projectPath": "C:\\Users\\zygen\\Desktop\\Pacman\\Pacman\\Pacman\\Pacman.csproj",
-      "outputPath": "C:\\Users\\zygen\\Desktop\\Pacman\\Pacman\\Pacman\\obj\\",
+      "projectPath": "D:\\Uni\\pacman\\Pacman\\Pacman\\Pacman\\Pacman.csproj",
+      "outputPath": "D:\\Uni\\pacman\\Pacman\\Pacman\\Pacman\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

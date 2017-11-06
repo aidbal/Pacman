@@ -7,3 +7,11 @@ C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.cspro
 C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.AssemblyInfo.cs
 C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.dll
 C:\Users\zygen\Desktop\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.pdb
+D:\Uni\pacman\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.deps.json
+D:\Uni\pacman\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.runtimeconfig.json
+D:\Uni\pacman\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.runtimeconfig.dev.json
+D:\Uni\pacman\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.dll
+D:\Uni\pacman\Pacman\Pacman\Pacman\bin\Debug\netcoreapp1.1\Pacman.pdb
+D:\Uni\pacman\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.AssemblyInfo.cs
+D:\Uni\pacman\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.dll
+D:\Uni\pacman\Pacman\Pacman\Pacman\obj\Debug\netcoreapp1.1\Pacman.pdb
