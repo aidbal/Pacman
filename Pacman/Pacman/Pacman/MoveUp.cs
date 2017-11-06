@@ -13,14 +13,9 @@ namespace Pacman
             this.controllable = newPacman;
         }
 
-        public void move()
-        {
-            this.controllable.move(1);
-        }
-
         public void move(int newDirection)
         {
-            this.controllable.move(1);
+            this.controllable.move(1);  
         }
     }
 }

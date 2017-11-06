@@ -6,5 +6,8 @@ namespace Pacman
 {
     interface IEnemy
     {
+        bool isEatable { get; set; }
+
+        void update();
     }
 }

@@ -12,7 +12,9 @@ namespace Pacman
 
         void notifyObservers()
         {
-
+            foreach(IEnemy obs in observers){
+                obs.
+            }
         }
 
         void register(IEnemy obs)
