@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pacman
 {
-    class Ghost : IEnemy
+    class Thief : IEnemy
     {
         public bool isEatable { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 

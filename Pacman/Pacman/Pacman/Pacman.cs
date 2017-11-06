@@ -8,23 +8,23 @@ namespace Pacman
     {
         private int moveDirection;
         private int speed = 1;
-        private IEnemy[] observers; 
+        private List<IEnemy> observers; 
 
         void notifyObservers()
         {
             foreach(IEnemy obs in observers){
-                obs.
+                obs.update();
             }
         }
 
         void register(IEnemy obs)
         {
-
+            observers.Add(obs);
         }
 
         void unregister(IEnemy obs)
         {
-
+            observers.Remove(obs);
         }
 
         void eat(ICandy candy)

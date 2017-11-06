@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Pacman
 {
-    class MoveUp : ICommand
+    class MoveLeft : ICommand
     {
         public Pacman controllable { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void move(int newDirection)
         {
-            this.controllable.move(1);  
+            this.controllable.move(4);
         }
     }
 }
