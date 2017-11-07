@@ -3,8 +3,9 @@ namespace Pacman
 {
     public class Gui
     {
-        public Gui()
+        public virtual void InitializeGui()
         {
+            Console.WriteLine("Initializing graphical interface");
         }
     }
 }
