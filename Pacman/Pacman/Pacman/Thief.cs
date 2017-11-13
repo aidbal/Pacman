@@ -4,13 +4,11 @@ using System.Text;
 
 namespace Pacman
 {
-    class Thief : IEnemy
+    class Thief : Enemy
     {
-        public bool isEatable { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public void update()
+        public Thief(int speed)
         {
-            isEatable = true;
+
         }
     }
 }

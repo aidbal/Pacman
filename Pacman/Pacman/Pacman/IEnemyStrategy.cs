@@ -4,10 +4,8 @@ using System.Text;
 
 namespace Pacman
 {
-    interface IEnemy
+    interface IEnemyStrategy
     {
-        bool isEatable { get; set; }
-
-        void update();
+        void setStrategy();
     }
 }

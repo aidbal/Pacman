@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Pacman
 {
-    class Ghost : Enemy
+    class AiChaser : IEnemyStrategy
     {
-        public Ghost(int speed)
+        public void setStrategy()
         {
-
+            throw new NotImplementedException();
         }
     }
 }
