@@ -7,9 +7,14 @@ using Pacman.Classes.Candies;
 
 namespace Pacman.Classes
 {
-    class CandyFactory
+    class CandyFactory : AbstractFactory
     {
-        public ICandy CreateCandy(String candyType)
+        public override IColor GetColor(string colorType)
+        {
+            return null;
+        }
+
+        public override ICandy GetCandy(string candyType)
         {
             if (candyType == null)
             {

@@ -22,6 +22,7 @@ namespace Pacman
         {
             get { return instance; }
         }
+
         // Singleton    done
         // Factory      done
         // Strategy     done
@@ -29,7 +30,7 @@ namespace Pacman
 
         // Adapter      done
         // Decorator    done
-        // Facade       
+        // Facade       done
         // Command      done
 
         
@@ -60,18 +61,33 @@ namespace Pacman
             pacman.Attach(enemy);
             pacman.State = true;
 
-            CandyFactory candyFactory = new CandyFactory();
-            ICandy candy1 = candyFactory.CreateCandy("small");
+            //Abstract factory
+            AbstractFactory candyFactory = new CandyFactory();
+            ICandy candy1 = candyFactory.GetCandy("small");
             candy1.CreateCandy();
 
-            ICandy candy2 = candyFactory.CreateCandy("big");
+            ICandy candy2 = candyFactory.GetCandy("big");
             candy2.CreateCandy();
 
-            ICandy candy3 = candyFactory.CreateCandy("cherry");
+            ICandy candy3 = candyFactory.GetCandy("cherry");
             candy3.CreateCandy();
 
-            ICandy candy4 = candyFactory.CreateCandy("BANANA");
+            ICandy candy4 = candyFactory.GetCandy("BANANA");
             candy4.CreateCandy();
+
+            AbstractFactory colorFactory = new ColorFactory();
+            IColor color1 = colorFactory.GetColor("yellow");
+            color1.CreateColor();
+
+            IColor color2 = colorFactory.GetColor("red");
+            color2.CreateColor();
+
+            //Facade
+            FoodFacade food = new FoodFacade();
+            food.CreateRedCherry();
+            food.CreateRedSmall();
+            food.CreateYellowBanana();
+            food.CreateYellowBig();
 
             //Decorator
             pacman.weapon = new Gun();
