@@ -14,9 +14,10 @@ namespace Pacman
 {
     public partial class Form1 : Form
     {
-        private Game game = new Game();
         private static Form1 instance;
         private Classes.Pacman pacman;
+        private ILogger logger = new LoggerAdapter();
+        private ILogger guiLogger = new GuiLoggerAdapter();
 
         public static Form1 Instance
         {
@@ -39,25 +40,30 @@ namespace Pacman
         {
             InitializeComponent();
             instance = this;
+
+            //Singleton and Adapter
+            logger.LogMessage("Adapter Works!");
+            guiLogger.LogMessage("Gui Logger Works!");
+
             pacman = new Classes.Pacman(false);
             MoveDown moveDown = new MoveDown(pacman);
             MoveUp moveUp = new MoveUp(pacman);
             MoveLeft moveLeft = new MoveLeft(pacman);
             MoveRight moveRight = new MoveRight(pacman);
 
-
-            game.startGame();
-
+            //Command
             pacman.Move(moveDown);
             pacman.Move(moveUp);
             pacman.Move(moveLeft);
             pacman.Move(moveRight);
 
+            //Strategy
             Enemy enemy = new Enemy(new AiAmbusher());
             enemy.SelectStrategy();
             enemy.strategy = new AiRandom();
             enemy.SelectStrategy();
 
+            //Observer
             pacman.Attach(enemy);
             pacman.State = true;
 

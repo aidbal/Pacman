@@ -59,8 +59,6 @@
     <Compile Include="Classes\Colors\Yellow.cs" />
     <Compile Include="Classes\Enemy.cs" />
     <Compile Include="Classes\FoodFacade.cs" />
-    <Compile Include="Classes\Game.cs" />
-    <Compile Include="Classes\GameBoardFacade.cs" />
     <Compile Include="Classes\GuiLogger.cs" />
     <Compile Include="Classes\GuiLoggerAdapter.cs" />
     <Compile Include="Classes\Gun.cs" />
@@ -69,7 +67,6 @@
     <Compile Include="Classes\ICommand.cs" />
     <Compile Include="Classes\IEnemyObserver.cs" />
     <Compile Include="Classes\IEnemyStrategy.cs" />
-    <Compile Include="Classes\IGameBoardFacade.cs" />
     <Compile Include="Classes\ILogger.cs" />
     <Compile Include="Classes\Logger.cs" />
     <Compile Include="Classes\LoggerAdapter.cs" />
