@@ -1,30 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-
 namespace Pacman
 {
     public class CandyFactory
     {
-
-        List<ICandy> candies;
-        public ICandy createCandy(String newCandyType)
+        public CandyFactory()
         {
-            ICandy newCandy = null;
-            if (newCandyType.Equals("Banana"))
+            public Candy createCandy(String newCandyType)
             {
-                return new Banana();
-            }
-            else if (newCandyType.Equals("Big"))
-            {
-                return new Big();
-            }
-            else if (newCandyType.Equals("Cherry"))
-            {
-                return new Cherry();
-            }
-            else if (newCandyType.Equals("Small"))
-            {
-                return new Small();
+                Candy newCandy = null;
+                if (newCandyType.Equals("Banana"))
+                {
+                    return new Banana();
+                }
+                else if (newCandyType.Equals("Big"))
+                {
+                    return new Big();
+                }
+                else if (newCandyType.Equals("Cherry"))
+                {
+                    return new Cherry();
+                }
+                else if (newCandyType.Equals("Small"))
+                {
+                    return new Small();
+                }
             }
         }
     }

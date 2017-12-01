@@ -1,20 +1,10 @@
 ﻿using System;
 namespace Pacman
 {
-    public class Banana : ICandy
+    public class Banana
     {
-        int locationX;
-        int locationY;
-        string type;
-
-        public void createCandy()
+        public Banana()
         {
-            type = "Banana";
-        }
-
-        public string getLocation()
-        {
-            return locationX.ToString() + locationY.ToString();
         }
     }
 }

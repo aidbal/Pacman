@@ -5,9 +5,12 @@ namespace Pacman
     {
         public static void Main(string[] args)
         {
-            var diSetup = new DependencyInjectionSetup().GetScope();
-            Gui gui = new GuiAdapter();
-            gui.InitializeGui();
+            IGameBoardFacade GameBoard = new GameBoardFacade();
+            Console.WriteLine("Starting game!");
+            GameBoard.initialize();
+            //var diSetup = new DependencyInjectionSetup().GetScope();
+            //Gui gui = new GuiAdapter();
+            //gui.InitializeGui();
         }
     }
 
