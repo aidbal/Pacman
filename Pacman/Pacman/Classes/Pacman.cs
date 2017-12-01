@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace Pacman.Classes
 {
-    class Pacman
+    class Pacman : PacmanSubject
     {
         public int moveDirection { set; get; }
         private int speed;
         private int locationX;
         private int locationY;
+        public Weapon weapon { set; get; }
+
+        public Pacman(bool isEatable) : base(isEatable)
+        {
+        }
 
         public void notifyObservers()
         {

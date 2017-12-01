@@ -48,12 +48,20 @@
     <Compile Include="Classes\AiAmbusher.cs" />
     <Compile Include="Classes\AiChaser.cs" />
     <Compile Include="Classes\AiRandom.cs" />
+    <Compile Include="Classes\Candies\BananaCandy.cs" />
+    <Compile Include="Classes\Candies\BigCandy.cs" />
+    <Compile Include="Classes\Candies\CherryCandy.cs" />
+    <Compile Include="Classes\CandyFactory.cs" />
+    <Compile Include="Classes\Cannon.cs" />
     <Compile Include="Classes\Enemy.cs" />
     <Compile Include="Classes\Game.cs" />
     <Compile Include="Classes\GameBoardFacade.cs" />
     <Compile Include="Classes\GuiLogger.cs" />
     <Compile Include="Classes\GuiLoggerAdapter.cs" />
+    <Compile Include="Classes\Gun.cs" />
+    <Compile Include="Classes\ICandy.cs" />
     <Compile Include="Classes\ICommand.cs" />
+    <Compile Include="Classes\IEnemyObserver.cs" />
     <Compile Include="Classes\IEnemyStrategy.cs" />
     <Compile Include="Classes\IGameBoardFacade.cs" />
     <Compile Include="Classes\ILogger.cs" />
@@ -64,6 +72,11 @@
     <Compile Include="Classes\MoveRight.cs" />
     <Compile Include="Classes\MoveUp.cs" />
     <Compile Include="Classes\Pacman.cs" />
+    <Compile Include="Classes\PacmanSubject.cs" />
+    <Compile Include="Classes\Candies\SmallCandy.cs" />
+    <Compile Include="Classes\SpeedTrap.cs" />
+    <Compile Include="Classes\Weapon.cs" />
+    <Compile Include="Classes\WeaponDecorator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

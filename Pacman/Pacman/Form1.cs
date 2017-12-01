@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,12 +22,23 @@ namespace Pacman
         {
             get { return instance; }
         }
+        // Singleton    done
+        // Factory      done
+        // Strategy     done
+        // Observer     done
+
+        // Adapter      done
+        // Decorator    done
+        // Facade       
+        // Command      done
+
+        
 
         public Form1()
         {
             InitializeComponent();
             instance = this;
-            pacman = new Classes.Pacman();
+            pacman = new Classes.Pacman(false);
             MoveDown moveDown = new MoveDown(pacman);
             MoveUp moveUp = new MoveUp(pacman);
             MoveLeft moveLeft = new MoveLeft(pacman);
@@ -44,12 +56,32 @@ namespace Pacman
             enemy.SelectStrategy();
             enemy.strategy = new AiRandom();
             enemy.SelectStrategy();
-        }
 
-        //public Form1()
-        //{
-        //    InitializeComponent();
-        //    game.startGame();
-        //}
+            pacman.Attach(enemy);
+            pacman.State = true;
+
+            CandyFactory candyFactory = new CandyFactory();
+            ICandy candy1 = candyFactory.CreateCandy("small");
+            candy1.CreateCandy();
+
+            ICandy candy2 = candyFactory.CreateCandy("big");
+            candy2.CreateCandy();
+
+            ICandy candy3 = candyFactory.CreateCandy("cherry");
+            candy3.CreateCandy();
+
+            ICandy candy4 = candyFactory.CreateCandy("BANANA");
+            candy4.CreateCandy();
+
+            //Decorator
+            pacman.weapon = new Gun();
+            Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
+            pacman.weapon = new Cannon(pacman.weapon);
+            Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
+            pacman.weapon = new SpeedTrap(pacman.weapon);
+            Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
+
+
+        }
     }
 }
