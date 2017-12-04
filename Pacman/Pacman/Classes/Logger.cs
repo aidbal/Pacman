@@ -13,7 +13,7 @@ namespace Pacman.Classes
         static Logger() { } // Make sure it's truly lazy
         private Logger() { } // Prevent instantiation outside
 
-        public static Logger Instance { get{ return logger; } }
+        public static Logger Instance { get { return logger; } }
 
         public void LogMessage(string message)
         {

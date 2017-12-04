@@ -8,3 +8,12 @@ C:\Users\Aidas\Dropbox\STUDIJOS\7 semesteras\Objektinis programų sistemų proje
 C:\Users\Aidas\Dropbox\STUDIJOS\7 semesteras\Objektinis programų sistemų projektavimas\Pacman\Pacman\Pacman\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
 C:\Users\Aidas\Dropbox\STUDIJOS\7 semesteras\Objektinis programų sistemų projektavimas\Pacman\Pacman\Pacman\obj\Debug\Pacman.exe
 C:\Users\Aidas\Dropbox\STUDIJOS\7 semesteras\Objektinis programų sistemų projektavimas\Pacman\Pacman\Pacman\obj\Debug\Pacman.pdb
+D:\Uni\pacman\Pacman\Pacman\bin\Debug\Pacman.exe.config
+D:\Uni\pacman\Pacman\Pacman\bin\Debug\Pacman.exe
+D:\Uni\pacman\Pacman\Pacman\bin\Debug\Pacman.pdb
+D:\Uni\pacman\Pacman\Pacman\obj\Debug\Pacman.csprojResolveAssemblyReference.cache
+D:\Uni\pacman\Pacman\Pacman\obj\Debug\Pacman.Form1.resources
+D:\Uni\pacman\Pacman\Pacman\obj\Debug\Pacman.Properties.Resources.resources
+D:\Uni\pacman\Pacman\Pacman\obj\Debug\Pacman.csproj.GenerateResource.Cache
+D:\Uni\pacman\Pacman\Pacman\obj\Debug\Pacman.exe
+D:\Uni\pacman\Pacman\Pacman\obj\Debug\Pacman.pdb
