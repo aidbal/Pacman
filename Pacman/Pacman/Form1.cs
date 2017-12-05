@@ -34,7 +34,18 @@ namespace Pacman
         // Facade       done
         // Command      done
 
-        
+        // Template Method - zaidimo temos
+        // State - zaidimo busena
+        // Proxy - 
+        // Iterator, Composite, Flyweight
+
+        // Chain of Responsibility
+        // Null Object - score null
+        // Memento - restart/resume game
+        // Visitor - when enemies die, they visit visitor
+        // Interpreter - custom game mod
+
+
 
         public Form1()
         {
