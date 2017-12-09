@@ -14,10 +14,13 @@ namespace Pacman.Classes
         {
             return weapon.Damage();
         }
-
-        public override string Shoot()
+        public override int Recoil()
         {
-            return weapon.Shoot();
+            return weapon.Recoil();
+        }
+        public override int BoostFoward()
+        {
+            return weapon.BoostFoward();
         }
     }
 }

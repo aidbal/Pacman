@@ -13,18 +13,28 @@ namespace Pacman.Classes
             this.weapon = weapon;
         }
 
+        public override int BoostFoward()
+        {
+            return 2;
+        }
+
         public override int Damage()
         {
             return base.Damage() + 10;
         }
 
-        public override string Shoot()
+        public override int Recoil()
         {
-            if (this.weapon != null)
-            {
-                return base.Shoot() + " and slowing bullet";
-            }
-            return string.Empty;
+            return 0;
+        }
+
+        public override bool HasRecoil()
+        {
+            return false;
+        }
+        public override bool HasFowardBoost()
+        {
+            return true;
         }
     }
 }
