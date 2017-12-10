@@ -14,9 +14,21 @@ namespace Pacman.Classes
             return 10;
         }
 
-        public override string Shoot()
+        public override int Recoil()
         {
-            return "Shooting simple bullet";
+            return 0;
+        }
+        public override int BoostFoward()
+        {
+            return 0;
+        }
+        public override bool HasFowardBoost()
+        {
+            return false;
+        }
+        public override bool HasRecoil()
+        {
+            return false;
         }
     }
 }
