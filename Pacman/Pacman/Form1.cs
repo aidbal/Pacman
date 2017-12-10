@@ -134,6 +134,20 @@ namespace Pacman
             Console.Write("");
             // Image will not be loaded from disk again
             image.Display();
+
+            // Flyweight
+            // Pattern used to generate obstacles based on their length
+
+            for (int i = 0; i < 8; i++)
+            {
+                //Creating duplicate objects
+                Obstacle obs = ObstacleFactory.GetObstacle(i < 4 ? i : i/2);
+                obs.SetX(4);
+                obs.SetY(4);
+                obs.SetRotation(0);
+                obs.Draw();
+            }
+            
         }
     }
 }
