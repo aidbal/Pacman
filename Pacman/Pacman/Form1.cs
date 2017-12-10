@@ -114,7 +114,26 @@ namespace Pacman
             pacman.weapon = new SpeedTrap(pacman.weapon);
             Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
 
+            // Missing Template Method
 
+            // State
+            // Changes game state from resumed to paused and vice versa
+            StateContext stateContext = new StateContext();
+            StateResumed stateResumed = new StateResumed();
+            StatePaused statePaused = new StatePaused();
+
+            stateResumed.Handle(stateContext);
+            Console.WriteLine(stateContext.GetState().GetString());
+            statePaused.Handle(stateContext);
+            Console.WriteLine(stateContext.GetState().GetString());
+
+            // Proxy
+            // Loads background image for gameboard
+            IBackgroundImage image = new ProxyBackgroundImage("Background1.jpg");
+            image.Display();
+            Console.Write("");
+            // Image will not be loaded from disk again
+            image.Display();
         }
     }
 }

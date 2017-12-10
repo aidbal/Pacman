@@ -78,6 +78,10 @@
     <Compile Include="Classes\PacmanSubject.cs" />
     <Compile Include="Classes\Candies\SmallCandy.cs" />
     <Compile Include="Classes\SpeedTrap.cs" />
+    <Compile Include="Classes\IState.cs" />
+    <Compile Include="Classes\StateContext.cs" />
+    <Compile Include="Classes\StatePaused.cs" />
+    <Compile Include="Classes\StateResumed.cs" />
     <Compile Include="Classes\Weapon.cs" />
     <Compile Include="Classes\WeaponDecorator.cs" />
     <Compile Include="Form1.cs">
