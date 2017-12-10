@@ -162,6 +162,22 @@ namespace Pacman
                 handler1.HandleScore(point);
             }
             Console.WriteLine("Final points: " + Highscore.Instance.score);
+
+            // Mediator
+            // Implemented chatroom
+            Chatroom chatroom = new Chatroom();
+
+            Participant player = new Participant("Player");
+            Participant spectator1 = new Participant("Spectator1");
+            Participant spectator2 = new Participant("Spectator2");
+
+            chatroom.Register(player);
+            chatroom.Register(spectator1);
+            chatroom.Register(spectator2);
+
+            player.Send("Spectator1", "Hello, spectator!");
+            spectator1.Send("Player", "Hello, player!");
+            spectator2.Send("Player", "Hey, don't forget me!");
         }
     }
 }
