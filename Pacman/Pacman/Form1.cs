@@ -107,15 +107,13 @@ namespace Pacman
             food.CreateYellowBanana();
             food.CreateYellowBig();
 
-            //Decorator
+            //Decorator with Template Method
             pacman.weapon = new Gun();
-            Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
+            Debug.WriteLine(pacman.weapon.Shoot());
             pacman.weapon = new Cannon(pacman.weapon);
-            Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
+            Debug.WriteLine(pacman.weapon.Shoot());
             pacman.weapon = new SpeedTrap(pacman.weapon);
-            Debug.WriteLine("Weapon damage = {0}, Weapon shoots = {1}", pacman.weapon.Damage(), pacman.weapon.Shoot());
-
-            // Missing Template Method
+            Debug.WriteLine(pacman.weapon.Shoot());
 
             // State
             // Changes game state from resumed to paused and vice versa
