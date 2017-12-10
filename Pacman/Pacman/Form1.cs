@@ -190,6 +190,16 @@ namespace Pacman
             Console.WriteLine("Restoring to first memento.");
             Highscore.Instance.SetMemento(careTaker.Get(0));
             Console.WriteLine("Restored score is: " + Highscore.Instance.score);
+
+            // Interpreter
+            // Eating yellow banana will binary shift your score to the left and add 10 points to the result
+            Console.WriteLine("Score before interpreter: " + Highscore.Instance.score);
+            Counter originalCounter = new ConcreteCounter(Highscore.Instance.score);
+            Counter bananaCounter = new ConcreteCounter(10);
+            Counter counter = new ShiftCounter(bananaCounter, originalCounter);
+
+            Highscore.Instance.score = counter.Count();
+            Console.WriteLine("Score before interpreter: " + Highscore.Instance.score);
         }
     }
 }

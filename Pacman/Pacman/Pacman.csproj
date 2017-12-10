@@ -58,10 +58,13 @@
     <Compile Include="Classes\Candies\CherryCandy.cs" />
     <Compile Include="Classes\CandyFactory.cs" />
     <Compile Include="Classes\Cannon.cs" />
+    <Compile Include="Classes\CareTaker.cs" />
     <Compile Include="Classes\Chatroom.cs" />
     <Compile Include="Classes\ColorFactory.cs" />
     <Compile Include="Classes\Colors\Red.cs" />
     <Compile Include="Classes\Colors\Yellow.cs" />
+    <Compile Include="Classes\ConcreteCounter.cs" />
+    <Compile Include="Classes\Counter.cs" />
     <Compile Include="Classes\Enemy.cs" />
     <Compile Include="Classes\FoodFacade.cs" />
     <Compile Include="Classes\GuiLogger.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="Classes\IObstacle.cs" />
     <Compile Include="Classes\Logger.cs" />
     <Compile Include="Classes\LoggerAdapter.cs" />
+    <Compile Include="Classes\Memento.cs" />
     <Compile Include="Classes\MoveDown.cs" />
     <Compile Include="Classes\MoveLeft.cs" />
     <Compile Include="Classes\MoveRight.cs" />
@@ -91,6 +95,7 @@
     <Compile Include="Classes\Participant.cs" />
     <Compile Include="Classes\PointsHandler.cs" />
     <Compile Include="Classes\ProxyBackgroundImage.cs" />
+    <Compile Include="Classes\ShiftCounter.cs" />
     <Compile Include="Classes\SpeedTrap.cs" />
     <Compile Include="Classes\IState.cs" />
     <Compile Include="Classes\StateContext.cs" />
