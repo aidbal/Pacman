@@ -130,7 +130,7 @@ namespace Pacman
             // Loads background image for gameboard
             IBackgroundImage image = new ProxyBackgroundImage("Background1.jpg");
             image.Display();
-            Console.Write("");
+            Console.WriteLine("");
             // Image will not be loaded from disk again
             image.Display();
 
@@ -181,10 +181,10 @@ namespace Pacman
             // Saving player score for later use
             CareTaker careTaker = new CareTaker();
             careTaker.Add(Highscore.Instance.SetMemento());
-            Console.WriteLine("Memento saved state: " + careTaker.Get(0));
+            Console.WriteLine("Memento saved state: " + careTaker.Get(0).GetScore());
             Highscore.Instance.score = 2222;
             careTaker.Add(Highscore.Instance.SetMemento());
-            Console.WriteLine("Memento saved state: " + careTaker.Get(1));
+            Console.WriteLine("Memento saved state: " + careTaker.Get(1).GetScore());
             Console.WriteLine("Restoring to first memento.");
             Highscore.Instance.SetMemento(careTaker.Get(0));
             Console.WriteLine("Restored score is: " + Highscore.Instance.score);

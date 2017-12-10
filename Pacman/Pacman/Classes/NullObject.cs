@@ -12,7 +12,7 @@ namespace Pacman.Classes
         {
             if (score == 0)
             {
-                Console.Write("NullObject handled request: " + score);
+                Console.WriteLine("NullObject handled request: " + score);
             }
             else if (nextHandler != null)
             {

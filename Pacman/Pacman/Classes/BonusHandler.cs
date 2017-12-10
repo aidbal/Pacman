@@ -12,7 +12,7 @@ namespace Pacman.Classes
         {
             if (score >= 10)
             {
-                Console.Write("BonusHandler handled request: " + score);
+                Console.WriteLine("BonusHandler handled request: " + score);
                 Highscore.Instance.score += score * 2;
             }
             else if (nextHandler != null)

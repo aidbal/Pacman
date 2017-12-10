@@ -19,7 +19,7 @@ namespace Pacman.Classes
             {
                 obs = new Obstacle(length);
                 hashtable.Add(length, obs);
-                Console.Write("Creating obstacle of length:" + length);
+                Console.WriteLine("Creating obstacle of length:" + length);
             }
             return obs;
         }

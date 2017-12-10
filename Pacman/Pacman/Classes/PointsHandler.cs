@@ -12,7 +12,7 @@ namespace Pacman.Classes
         {
             if (score < 10)
             {
-                Console.Write("PointsHandler handled request: " + score);
+                Console.WriteLine("PointsHandler handled request: " + score);
                 Highscore.Instance.score += score;
             }
             else if (nextHandler != null)
