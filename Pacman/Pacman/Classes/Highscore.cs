@@ -17,5 +17,16 @@ namespace Pacman.Classes
         } // Prevent instantiation outside
 
         public static Highscore Instance { get { return highscore; } }
+
+        public Memento SetMemento()
+        {
+            Console.WriteLine("Saving user score to memento.");
+            return new Memento(score);
+        }
+        public void SetMemento(Memento memento)
+        {
+            Console.WriteLine("Restoring user score from memento.");
+            score = memento.GetScore();
+        }
     }
 }

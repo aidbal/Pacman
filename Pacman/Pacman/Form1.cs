@@ -178,6 +178,18 @@ namespace Pacman
             player.Send("Spectator1", "Hello, spectator!");
             spectator1.Send("Player", "Hello, player!");
             spectator2.Send("Player", "Hey, don't forget me!");
+
+            // Memento
+            // Saving player score for later use
+            CareTaker careTaker = new CareTaker();
+            careTaker.Add(Highscore.Instance.SetMemento());
+            Console.WriteLine("Memento saved state: " + careTaker.Get(0));
+            Highscore.Instance.score = 2222;
+            careTaker.Add(Highscore.Instance.SetMemento());
+            Console.WriteLine("Memento saved state: " + careTaker.Get(1));
+            Console.WriteLine("Restoring to first memento.");
+            Highscore.Instance.SetMemento(careTaker.Get(0));
+            Console.WriteLine("Restored score is: " + Highscore.Instance.score);
         }
     }
 }
