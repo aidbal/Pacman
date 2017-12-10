@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -147,7 +148,20 @@ namespace Pacman
                 obs.SetRotation(0);
                 obs.Draw();
             }
-            
+
+            // Chain of responsibility
+            // For handling scores
+            AllScoresHandler handler1 = new NullObject();
+            AllScoresHandler handler2 = new BonusHandler();
+            AllScoresHandler handler3 = new PointsHandler();
+            handler1.SetNextHandler(handler2);
+            handler2.SetNextHandler(handler3);
+            int[] points = { 0, 15, 5, 10, -5, 16, 18, 0, 0, 13, 1, 2, 3};
+            foreach (int point in points)
+            {
+                handler1.HandleScore(point);
+            }
+            Console.WriteLine("Final points: " + Highscore.Instance.score);
         }
     }
 }
